@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+         <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">  -->
+        <meta http-equiv="Content-Type" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no" charset="UTF-8">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+      <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+      <link rel="stylesheet" type="text/css" href="css/index.css">
+      <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+      <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <title>Hello World</title>
+    </head>
+    <body>
+<h4>영화</h4>
+
+			<label class="ticket_link">영화 예매하기</label> <br />
+			<ul data-role="listview">
+    <li><a href="#" id="ma">마션</a></li>
+    <li><a href="#">인턴</a></li>
+    <li><a href="#">스타워즈</a></li>
+    <li><a href="#">Cadillac</a></li>
+    <li><a href="#">Ferrari</a></li>
+	
+</ul>
+			<br />
+			<br /> <input type="button" value="예매하기" id="btn_click" />
+<script type="text/javascript" src="cordova.js">
+$(function(){
+    $('#btn_click').click(function(){
+      alert('영화가 클릭되었음');
+  	$('#content').empty();
+      movie.mation();
+   });
+}
+var movie = {
+		mation : function(){
+		$('#content').html(''
+				+'<h1>예매하기</h1><br />'
+				+''
+				+''
+				+''
+				+''
+		);
+		}
+		}  
+    
+</script>
+
+</body>
+</div>
